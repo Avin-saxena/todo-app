@@ -1,0 +1,32 @@
+.checkedText{
+  text-decoration-color: brown;
+  text-decoration:line-through;
+}
+
+.addTodos{
+  width: 235px;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+.addTodos::placeholder{
+  color: #000;
+}
+
+.todo{
+  width: 30%;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+    background: rgb(85, 41, 220);
+
+}
+.chkBox{
+  width: 27px;
+}
+.text{
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
