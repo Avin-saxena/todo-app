@@ -9,13 +9,13 @@ const getAllToDo = (setToDo)=>{
     })
 }
 
-const addToDo=(text,setText,setToDo)=>{
+const addToDo=(text,date,setText,setToDo)=>{
     if (text.trim() === '') {
       return;
     }
   
     axios
-    .post(`${baseUrl}/save`,{text})
+    .post(`${baseUrl}/save`,{text, date})
     .then((data)=>{
       console.log(data);
       setText("")
@@ -24,9 +24,9 @@ const addToDo=(text,setText,setToDo)=>{
     .catch((err)=>console.log(err))
   }
 
-const updateToDo=(toDoId,text,setToDo,setText,setIsUpdating)=>{
+const updateToDo=(toDoId,text,date,setToDo,setText,setIsUpdating)=>{
     axios
-        .post(`${baseUrl}/update`,{_id: toDoId,text})
+        .post(`${baseUrl}/update`,{_id: toDoId,text,date})
         .then((data)=>{
         setText("")
         setIsUpdating(false)

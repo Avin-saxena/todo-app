@@ -2,7 +2,12 @@
   text-decoration-color: brown;
   text-decoration:line-through;
 }
-
+.top{
+  width: 23%;
+  align-items: center;
+  margin: auto;
+  margin-top: 1.5rem;
+}
 .addTodos{
   width: 235px;
   padding: 0.5rem;
@@ -11,9 +16,14 @@
 .addTodos::placeholder{
   color: #000;
 }
+.dateAndTime{
+  margin-left: 177px;
+  margin-top: 2px;
+
+}
 
 .todo{
-  width: 30%;
+  width: 33%;
     display: flex;
     margin: auto;
     margin-top: 2rem;
